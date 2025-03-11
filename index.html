@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 新增音乐播放器 -->
+    <audio id="bg-music" loop muted autoplay>
+        <!-- <source src="./audio/bg-music.mp3" type="audio/mpeg"> -->
+        <source src="./bg-music.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+
+    <div class="container">
+        <div id="date-display"></div>
+        <div id="output">加载中...</div>
+        <!-- 新增音乐控制按钮 -->
+        <button id="music-toggle">取消静音</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

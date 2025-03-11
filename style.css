@@ -1,0 +1,91 @@
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        width: 95%;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    #output {
+        font-size: 16px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    /* 新增背景图片代码 */
+    /* background: url('./image/圣经背景.png') no-repeat center center fixed; */
+    background: url('./Biblebg.png') no-repeat center center fixed;
+    /* background-size: cover; 确保图片覆盖整个屏幕 */
+    /* position: relative; 为叠加效果做准备 */
+}
+
+/* 添加半透明遮罩层提升文字可读性 */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(255, 255, 255, 0.4); 白色半透明遮罩 */
+    z-index: -1; /* 确保内容在遮罩上方 */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.4); /* 容器半透明白色 */
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 700px;
+    width: 90%; /* 移动端适配 */
+    /* backdrop-filter: blur(2px); 毛玻璃效果（可选） */
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 45px;
+    color: #252525;
+    line-height: 1.6;
+}
+
+blockquote {
+    font-style: italic;
+    color: #2c3e50;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+#date-display {
+
+    font-size: 40px;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+}
+/* 音乐 */
+#music-toggle {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#music-toggle:hover {
+    background-color: #2980b9;
+}
